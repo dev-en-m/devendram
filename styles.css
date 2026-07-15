@@ -34,6 +34,16 @@ p {
     text-align: left;
 }
 
+code {
+    background: #fff3e8;
+    border: 1px solid #ffd6b5;
+    border-radius: 0.25rem;
+    color: #c45100;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    padding: 0.08rem 0.28rem;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
