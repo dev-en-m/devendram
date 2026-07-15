@@ -40,8 +40,7 @@
                         <h2>Profile RAG</h2>
                         <p class="thing-date"><time datetime="2026-07-15">July 15, 2026</time></p>
                         <p>
-                            A profile-aware RAG application that lets users upload <code>.txt</code> profiles and query them through a chat interface. The API chunks each profile, generates embeddings with <code>nomic-embed-text</code>, stores username-scoped context in ChromaDB, retrieves relevant passages per question, and uses the local <code>qwen2.5:0.5b</code> Ollama model to generate grounded responses.
-                        </p>
+                            A profile-aware RAG application that lets users upload `.txt` or Markdown profiles and query them through a chat interface. The API chunks plain text by paragraphs and Markdown by headings, generates embeddings with `nomic-embed-text`, stores username-scoped context in ChromaDB, retrieves relevant passages per question, and uses the local `qwen2.5:0.5b` Ollama model to generate grounded responses.                </p>
                         <ul class="work-tags" aria-label="Profile RAG tags">
                             <li>RAG</li>
                             <li>FastAPI</li>
