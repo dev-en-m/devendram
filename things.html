@@ -35,6 +35,31 @@
         <main>
             <section id="work-items" aria-labelledby="things-heading">
                 <h2 id="things-heading" class="visually-hidden">Things</h2>
+                <div class="work-item thing-card">
+                    <div class="work-item-data">
+                        <h2>Profile RAG</h2>
+                        <p class="thing-date"><time datetime="2026-07-15">July 15, 2026</time></p>
+                        <p>
+                            A RAG app for chatting with uploaded user profiles. The UI accepts a username and `.txt` profile, while the API chunks the text, embeds it with `nomic-embed-text`, stores it in ChromaDB with username metadata, retrieves the most relevant chunks for a question, and asks the local `qwen2.5:0.5b` Ollama model to answer from that profile context.
+                        </p>
+                        <ul class="work-tags" aria-label="Profile RAG tags">
+                            <li>RAG</li>
+                            <li>FastAPI</li>
+                            <li>ChromaDB</li>
+                            <li>Ollama</li>
+                            <li>nomic-embed-text</li>
+                            <li>qwen2.5:0.5b</li>
+                            <li>React</li>
+                            <li>Vite</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p class="work-links">
+                            <a href="https://github.com/dev-en-m/profile-rag" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>

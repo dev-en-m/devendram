@@ -102,6 +102,16 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+.thing-card .work-item-data h2 {
+    font-weight: 500;
+}
+
+.thing-date {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
 .work-tags {
     display: flex;
     list-style-type: none;
