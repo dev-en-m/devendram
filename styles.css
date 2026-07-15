@@ -88,7 +88,7 @@ footer {
     box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
 }
 
-.work-item-data{
+.work-item-data {
     text-align: left;
     flex: 1;
 }
@@ -176,9 +176,21 @@ footer {
     background: rgb(0 0 0 / 70%);
 }
 
+.gems-section {
+    text-align: left;
+}
+
+.gems-section ul > li{
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 700px) {
     body {
         max-width: 90%;
+    }
+
+    #hero {
+        flex-direction: column;
     }
 
     .work-item {
