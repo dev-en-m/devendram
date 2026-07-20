@@ -18,6 +18,7 @@
         <meta property="og:image" content="https://devendram.com/images/devendra-mulewa.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <title>Things - Devendra Mulewa</title>
+        <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -37,10 +38,35 @@
                 <h2 id="things-heading" class="visually-hidden">Things</h2>
                 <div class="work-item thing-card">
                     <div class="work-item-data">
+                        <h2>Career RAG</h2>
+                        <p class="thing-date"><time datetime="2026-07-20">July 20, 2026</time></p>
+                        <p>
+                            A local RAG system for structured CV analysis and explainable job recommendations. It extracts candidate data from text-based PDFs with Pydantic validation, generates CV, skill, and job embeddings with <code>nomic-embed-text</code>, retrieves semantically relevant roles, and uses <code>qwen2.5:0.5b</code> through Ollama to explain each match in a Streamlit interface.
+                        </p>
+                        <ul class="work-tags" aria-label="Career RAG tags">
+                            <li>RAG</li>
+                            <li>Python</li>
+                            <li>Streamlit</li>
+                            <li>Ollama</li>
+                            <li>nomic-embed-text</li>
+                            <li>qwen2.5:0.5b</li>
+                            <li>Pydantic</li>
+                            <li>Docker</li>
+                        </ul>
+                        <p class="work-links">
+                            <a href="https://github.com/dev-en-m/career-rag" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="work-item thing-card">
+                    <div class="work-item-data">
                         <h2>Profile RAG</h2>
                         <p class="thing-date"><time datetime="2026-07-15">July 15, 2026</time></p>
                         <p>
-                            A profile-aware RAG application that lets users upload <code>.txt</code> or Markdown profiles and query them through a chat interface. The API chunks plain text by paragraphs and Markdown by headings, generates embeddings with <code>nomic-embed-text</code>, stores username-scoped context in ChromaDB, retrieves relevant passages per question, and uses the local <code>qwen2.5:0.5b</code> Ollama model to generate grounded responses.                </p>
+                            A profile-aware RAG application that lets users upload <code>.txt</code> or Markdown profiles and query them through a chat interface. The API chunks plain text by paragraphs and Markdown by headings, generates embeddings with <code>nomic-embed-text</code>, stores username-scoped context in ChromaDB, retrieves relevant passages per question, and uses the local <code>qwen2.5:0.5b</code> Ollama model to generate grounded responses.
+                        </p>
                         <ul class="work-tags" aria-label="Profile RAG tags">
                             <li>RAG</li>
                             <li>FastAPI</li>
@@ -59,13 +85,30 @@
                         </p>
                     </div>
                 </div>
+                <div class="work-item thing-card">
+                    <div class="work-item-data">
+                        <h2>Tech Shorts</h2>
+                        <p class="thing-date"><time datetime="2026-02-20">February 20, 2026</time></p>
+                        <p>
+                            A curated, vertical feed for discovering technology-focused YouTube Shorts. A Python ingestion pipeline collects videos up to 60 seconds long from selected channels through the YouTube Data API, stores them in SQLite, and serves a paginated feed through FastAPI. The lightweight JavaScript interface uses the YouTube IFrame API for continuous, swipe-friendly playback.
+                        </p>
+                        <ul class="work-tags" aria-label="Tech Shorts tags">
+                            <li>YouTube Data API</li>
+                            <li>FastAPI</li>
+                            <li>SQLite</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Docker</li>
+                            <li>Content Curation</li>
+                        </ul>
+                        <p class="work-links">
+                            <a href="https://github.com/dev-en-m/yt-tech-shorts" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer>
-            <p>
-                Build with ❤️ By <a href="index.html">Devendra</a>
-                🚫 AI 🙈
-            </p>
-        </footer>
     </body>
 </html>
