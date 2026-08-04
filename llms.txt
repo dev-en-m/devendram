@@ -1,0 +1,18 @@
+# Devendra Mulewa
+
+> Software engineer based in India who designs and builds software systems, developer tools, and user experiences for businesses. Currently freelancing on Upwork.
+
+## Pages
+
+- [Home](https://devendram.com/): Bio, contact links (GitHub, LinkedIn, X, Upwork, Calendly).
+- [Work](https://devendram.com/work.html): Selected professional work — developer tools, AI collaboration products, API tooling, healthcare web applications.
+- [Things](https://devendram.com/things.html): Personal experiments, prototypes, and open source projects, mostly RAG/LLM tooling built with Python, FastAPI, and Ollama.
+- [Gems](https://devendram.com/gems.html): Curated list of external resources and links.
+- [Archive](https://devendram.com/archive.html): Older projects and shipped frontend work.
+
+## Contact
+
+- GitHub: https://github.com/dev-en-m
+- LinkedIn: https://linkedin.com/in/devendramulewa
+- X: https://x.com/Devendra5101
+- Upwork: https://www.upwork.com/freelancers/~01f65a9370e897fcef
