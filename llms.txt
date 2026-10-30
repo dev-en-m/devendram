@@ -5,8 +5,8 @@
 ## Pages
 
 - [Home](https://devendram.com/): Bio, contact links (GitHub, LinkedIn, X, Upwork, Calendly).
-- [Work](https://devendram.com/work.html): Selected professional work — developer tools, AI collaboration products, API tooling, healthcare web applications.
-- [Things](https://devendram.com/things.html): Personal experiments, prototypes, and open source projects, mostly RAG/LLM tooling built with Python, FastAPI, and Ollama.
+- [Work](https://devendram.com/work.html): Selected professional work — Daintree (AI agent worktrees), NOWAQ (AI quality assurance), Bruno (API client), Kluff (organizational memory), Slurp AI (codebase Q&A bot), and a doctor appointment platform.
+- [Things](https://devendram.com/things.html): Personal experiments, prototypes, and open source projects, User Core, cmdgenie-cli, LLM Judge Harness, Career RAG, Profile RAG, and Tech Shorts, mostly RAG/LLM tooling built with Python, FastAPI, and Ollama.
 - [Gems](https://devendram.com/gems.html): Curated list of external resources and links.
 - [Archive](https://devendram.com/archive.html): Older projects and shipped frontend work.
 
@@ -15,4 +15,5 @@
 - GitHub: https://github.com/dev-en-m
 - LinkedIn: https://linkedin.com/in/devendramulewa
 - X: https://x.com/Devendra5101
+- Calendly: https://calendly.com/devendramulewa171/30min
 - Upwork: https://www.upwork.com/freelancers/~01f65a9370e897fcef
