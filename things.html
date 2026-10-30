@@ -30,25 +30,24 @@
     </head>
     <body>
         <header>
-            <h1><a href="index.html">Devendra</a></h1>
+            <p class="site-title"><a href="index.html">Devendra</a></p>
             <nav aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="work.html">Work</a></li>
                     <li><a href="gems.html">Gems</a></li>
-                    <li><a href="things.html">Things</a></li>
+                    <li><a href="things.html" aria-current="page">Things</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="work-items" aria-labelledby="things-heading">
-                <h2 id="things-heading" class="visually-hidden">Things</h2>
+                <h1 id="things-heading" class="page-head">Things</h1>
                 <div class="work-item thing-card">
                     <div class="work-item-data">
-                        <h2>User Core</h2>
                         <p class="thing-date"><time datetime="2026-08-05">August 5, 2026</time></p>
+                        <h2>User Core</h2>
                         <p>
-                            A production-shaped FastAPI service built as a benchmark platform for observability and load testing. It exposes a Task CRUD API with Clerk authentication, correlates request/trace IDs across structured logs, metrics, and distributed traces, and ships 12 k6 load scenarios with live Grafana visualization.
+                            A FastAPI service for practising observability and load testing, with Clerk auth, traces, metrics, and k6 scenarios.
                         </p>
                         <ul class="work-tags" aria-label="User Core tags">
                             <li>FastAPI</li>
@@ -71,10 +70,10 @@
                 </div>
                 <div class="work-item thing-card">
                     <div class="work-item-data">
-                        <h2>cmdgenie-cli</h2>
                         <p class="thing-date"><time datetime="2026-08-05">August 5, 2026</time></p>
+                        <h2>cmdgenie-cli</h2>
                         <p>
-                            A natural language CLI that turns plain-English requests into shell commands without ever executing them. It prints the generated command with warnings for destructive operations like <code>rm -rf</code> or <code>DROP TABLE</code>, caps input at 200 words, and reads configuration from <code>~/.cmdgenierc</code> with OpenAI's <code>gpt-4.1-nano</code> as the default provider.
+                            A CLI that turns plain-English requests into shell commands and warns about risky ones. It never runs them.
                         </p>
                         <ul class="work-tags" aria-label="cmdgenie-cli tags">
                             <li>Node.js</li>
@@ -92,10 +91,10 @@
                 </div>
                 <div class="work-item thing-card">
                     <div class="work-item-data">
-                        <h2>LLM Judge Harness</h2>
                         <p class="thing-date"><time datetime="2026-07-29">July 29, 2026</time></p>
+                        <h2>LLM Judge Harness</h2>
                         <p>
-                            A lightweight evaluation harness for checking whether an agent answers correctly and uses the expected tools. It runs CLI-based evals, provides a Streamlit interface for creating test cases, supports configurable agent and judge models through Ollama, and combines keyword, tool-call, and rubric-based LLM-as-judge checks.
+                            A small harness that checks if an agent answers correctly and calls the right tools, using an LLM as judge.
                         </p>
                         <ul class="work-tags" aria-label="LLM Judge Harness tags">
                             <li>LLM Evaluation</li>
@@ -116,10 +115,10 @@
                 </div>
                 <div class="work-item thing-card">
                     <div class="work-item-data">
-                        <h2>Career RAG</h2>
                         <p class="thing-date"><time datetime="2026-07-20">July 20, 2026</time></p>
+                        <h2>Career RAG</h2>
                         <p>
-                            A local RAG system for structured CV analysis and explainable job recommendations. It extracts candidate data from text-based PDFs with Pydantic validation, generates CV, skill, and job embeddings with <code>nomic-embed-text</code>, retrieves semantically relevant roles, and uses <code>qwen2.5:0.5b</code> through Ollama to explain each match in a Streamlit interface.
+                            A local RAG app that reads CVs, recommends jobs, and explains each match with Ollama models.
                         </p>
                         <ul class="work-tags" aria-label="Career RAG tags">
                             <li>RAG</li>
@@ -140,10 +139,10 @@
                 </div>
                 <div class="work-item thing-card">
                     <div class="work-item-data">
-                        <h2>Profile RAG</h2>
                         <p class="thing-date"><time datetime="2026-07-15">July 15, 2026</time></p>
+                        <h2>Profile RAG</h2>
                         <p>
-                            A profile-aware RAG application that lets users upload <code>.txt</code> or Markdown profiles and query them through a chat interface. The API chunks plain text by paragraphs and Markdown by headings, generates embeddings with <code>nomic-embed-text</code>, stores username-scoped context in ChromaDB, retrieves relevant passages per question, and uses the local <code>qwen2.5:0.5b</code> Ollama model to generate grounded responses.
+                            A chat app that answers questions from uploaded text or Markdown profiles, using ChromaDB and a local Ollama model.
                         </p>
                         <ul class="work-tags" aria-label="Profile RAG tags">
                             <li>RAG</li>
@@ -165,10 +164,10 @@
                 </div>
                 <div class="work-item thing-card">
                     <div class="work-item-data">
-                        <h2>Tech Shorts</h2>
                         <p class="thing-date"><time datetime="2026-02-20">February 20, 2026</time></p>
+                        <h2>Tech Shorts</h2>
                         <p>
-                            A curated, vertical feed for discovering technology-focused YouTube Shorts. A Python ingestion pipeline collects videos up to 60 seconds long from selected channels through the YouTube Data API, stores them in SQLite, and serves a paginated feed through FastAPI. The lightweight JavaScript interface uses the YouTube IFrame API for continuous, swipe-friendly playback.
+                            A vertical feed of tech YouTube Shorts, built with a Python ingestion pipeline, FastAPI, and SQLite.
                         </p>
                         <ul class="work-tags" aria-label="Tech Shorts tags">
                             <li>YouTube Data API</li>
@@ -188,5 +187,17 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <div>
+                <p class="footer-name">Devendra Mulewa</p>
+                <p>Software engineer in India. I design and build software systems.</p>
+            </div>
+            <ul>
+                <li><a href="https://x.com/Devendra5101" target="_blank" rel="noopener noreferrer">X</a></li>
+                <li><a href="https://linkedin.com/in/devendramulewa" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/dev-en-m" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.upwork.com/freelancers/~01f65a9370e897fcef?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
