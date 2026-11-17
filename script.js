@@ -1,4 +1,3 @@
-
 const imagePreview = document.querySelector("#image-preview");
 
 if (imagePreview) {
