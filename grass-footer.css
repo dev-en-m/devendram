@@ -32,7 +32,9 @@
 
 /* ---- Homepage fit: one screen, content scrolls inside main, grass fills the bottom 20% ---- */
 body.home { height: 100dvh; overflow: hidden; }
-body.home main { min-height: 0; overflow: auto; }
+body.home main { flex: 0 1 auto; min-height: 0; overflow: auto; }
+/* The grass starts just below the text and fills the rest of the screen (20% to 60% of the height). */
+body.home .grass-footer { flex: 1 1 20dvh; min-height: 20vh; min-height: 20dvh; max-height: 60dvh; }
 footer.grass-footer { display: block; padding: 0; border: 0; }
 .grass-footer .grass-footer-content { display: flex; justify-content: center; gap: 8px 20px; flex-wrap: wrap; padding: 0 15px; }
 .grass-footer-content p, .grass-footer-content ul { margin: 0; }
