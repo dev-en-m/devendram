@@ -44,7 +44,7 @@
     x = nx; y = ny; lx = nx; ly = ny;
     cur.classList.add('on');
     // Over links and buttons, show the normal pointer instead of the wind cursor.
-    cur.style.opacity = e.target.closest && e.target.closest('a, button') ? '0' : '';
+    cur.style.opacity = e.target.closest && e.target.closest('a, button, .bug') ? '0' : '';
   }, { passive: true });
   addEventListener('pointerdown', (e) => {
     if (reduce) return;
