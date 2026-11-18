@@ -5,7 +5,7 @@
 ## Pages
 
 - [Home](https://devendram.com/): Bio, contact links (GitHub, LinkedIn, X, Upwork, Calendly).
-- [Work](https://devendram.com/work.html): Selected professional work with roles and dates. Daintree (QA and cross-platform engineer), NOWAQ (lead engineer, AI quality assurance), Bruno (SDE II, API client), Kluff and Slurp AI (full-stack developer, organizational memory and codebase Q&A bot), a doctor appointment platform, and two confidential contracts (AI agent operations, pre-release QA).
+- [Work](https://devendram.com/work.html): Selected professional work with roles and dates, newest first. Two confidential contracts (AI agent operations, pre-release QA), Daintree (QA and cross-platform engineer), Kluff and Slurp AI (full-stack developer, organizational memory and codebase Q&A bot), Bruno (SDE II, API client), NOWAQ (lead engineer, AI quality assurance), and a doctor appointment platform.
 - [Things](https://devendram.com/things.html): Personal projects, newest first. Lead Flow (n8n lead automation), Deploy Kit (multi-project Docker hosting), Interests Filter for X (Chrome extension), User Core (observability and load testing), pls, LLM Judge Harness, Career RAG, Profile RAG, and Loop (live at https://loop.devendram.com).
 - [Gems](https://devendram.com/gems.html): Curated list of external resources and links.
 - [Archive](https://devendram.com/archive.html): Older projects and shipped frontend work.
