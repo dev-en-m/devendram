@@ -6,5 +6,5 @@ html.puff-cursor .bug { cursor: pointer !important; }
 @keyframes bug-bob { to { transform: translateY(-2px) rotate(4deg); } }
 .bug.squashed { pointer-events: none; opacity: 0; transform: scale(1.5, .25); }
 .bug.squashed svg { animation: none; }
-.bug-score { display: block; margin-top: 2px; }
+.bug-score { flex-basis: 100%; text-align: center; }
 @media (prefers-reduced-motion: reduce) { .bug svg { animation: none; } }
