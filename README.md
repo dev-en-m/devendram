@@ -10,7 +10,6 @@ The home page has extra pieces, each in its own files:
 - **Wind cursor** (`puff-cursor.js`): a custom cursor for mouse and trackpad devices only.
 - **Bug squash game** (`bugs.js`, `bugs.css`): bugs crawl on the grass. A click or tap squashes one.
 - **Terminal card** (`terminal.js`, `terminal.css`): a Ghostty-style terminal that types a short intro. It shows only on screens at least 1400px wide.
-- **Avatar motion** (in `styles.css`): a slow sway and a soft ring.
 
 All motion stops when the visitor has reduced motion turned on. On screens under 600px wide or 700px high, the home page scrolls normally.
 
