@@ -158,6 +158,37 @@ main {
     object-fit: cover;
 }
 
+/* Subtle motion: a slow sway like grass in light wind, and a soft green ring that grows and fades. */
+.avatar {
+    animation: avatar-sway 7s ease-in-out infinite, avatar-ring 4.5s ease-out infinite;
+    transition: scale 0.4s ease;
+}
+
+.avatar:hover {
+    scale: 1.05;
+}
+
+@keyframes avatar-sway {
+    0%, 100% { transform: translateY(0) rotate(-1.2deg); }
+    50% { transform: translateY(-3px) rotate(1.2deg); }
+}
+
+@keyframes avatar-ring {
+    0% { box-shadow: 0 0 0 0 rgb(157 187 60 / 45%); }
+    70%, 100% { box-shadow: 0 0 0 12px rgb(157 187 60 / 0%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .avatar {
+        animation: none;
+        transition: none;
+    }
+
+    .avatar:hover {
+        scale: 1;
+    }
+}
+
 .work-item {
     margin-bottom: 60px;
 }
@@ -284,6 +315,7 @@ footer ul {
 @media (max-width: 600px) {
     header {
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: flex-start;
         padding-bottom: 16px;
     }

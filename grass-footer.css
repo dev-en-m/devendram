@@ -43,3 +43,10 @@ footer.grass-footer { display: block; padding: 0; border: 0; }
 
 /* Fallback when WebGL or the CDN fails: a plain green field (shown until the script adds .grass-ok) keeps the light footer text readable. */
 .grass-footer:not(.grass-ok) { background: linear-gradient(#5f8a2e, #1c360b); }
+
+/* Small screens (narrow or short): the whole page scrolls, and the grass is a fixed block at the end. */
+@media (max-width: 600px), (max-height: 700px) {
+    body.home { height: auto; min-height: 100dvh; overflow: visible; }
+    body.home main { flex: 1 0 auto; overflow: visible; }
+    body.home .grass-footer { flex: 0 0 auto; height: 200px; min-height: 200px; max-height: none; }
+}
