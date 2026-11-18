@@ -158,10 +158,6 @@ main {
     object-fit: cover;
 }
 
-.home-links p {
-    font-weight: 600;
-}
-
 .work-item {
     margin-bottom: 60px;
 }
