@@ -1,5 +1,5 @@
 /* Bug squash game on the grass. Bugs are decoration, so the layer is hidden from screen readers. */
-.bug-layer { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.bug-layer { position: absolute; inset: 0 0 64px 0; pointer-events: none; overflow: hidden; }
 .bug { position: absolute; width: 34px; height: 34px; margin: -17px 0 0 -17px; pointer-events: auto; cursor: pointer; transition: opacity .5s, transform .15s; }
 html.puff-cursor .bug { cursor: pointer !important; }
 .bug svg { display: block; width: 100%; height: 100%; animation: bug-bob .35s ease-in-out infinite alternate; }
