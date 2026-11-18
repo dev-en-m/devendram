@@ -39,5 +39,5 @@ footer.grass-footer { display: block; padding: 0; border: 0; }
 .grass-footer-content ul { display: flex; gap: 14px; }
 .grass-footer-content a { color: inherit; text-decoration: underline; }
 
-/* Fallback when WebGL or the CDN fails: a plain green field keeps the light footer text readable. */
-.grass-footer { background: linear-gradient(#5f8a2e, #1c360b); }
+/* Fallback when WebGL or the CDN fails: a plain green field (shown until the script adds .grass-ok) keeps the light footer text readable. */
+.grass-footer:not(.grass-ok) { background: linear-gradient(#5f8a2e, #1c360b); }
