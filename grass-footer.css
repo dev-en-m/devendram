@@ -15,6 +15,7 @@
   /* ================= PUFF CURSOR: COPY THIS CSS ================= */
   /* Only for mouse / trackpad (the script adds this class); touch screens keep normal behaviour. */
   html.puff-cursor, html.puff-cursor * { cursor: none !important; }
+  html.puff-cursor a, html.puff-cursor button { cursor: pointer !important; }
   #puff-cursor {
     position: fixed; left: 0; top: 0; width: 48px; height: 32px;
     pointer-events: none; z-index: 2147483647;
@@ -37,3 +38,6 @@ footer.grass-footer { display: block; padding: 0; border: 0; }
 .grass-footer-content p, .grass-footer-content ul { margin: 0; }
 .grass-footer-content ul { display: flex; gap: 14px; }
 .grass-footer-content a { color: inherit; text-decoration: underline; }
+
+/* Fallback when WebGL or the CDN fails: a plain green field keeps the light footer text readable. */
+.grass-footer { background: linear-gradient(#5f8a2e, #1c360b); }
