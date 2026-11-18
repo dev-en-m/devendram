@@ -41,18 +41,13 @@
         </header>
         <main>
             <section id="work-items" aria-labelledby="work-heading">
-                <h1 id="work-heading" class="page-head">Selected Work</h1>
+                <h1 id="work-heading" class="visually-hidden">Selected Work</h1>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/daintree.webp"
-                            alt="Daintree screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
                         <p class="thing-date">QA &amp; Cross-Platform Engineer · Mar – Jun 2026</p>
-                        <h2>Daintree</h2>
+                        <h2 class="peek" tabindex="0">Daintree
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/daintree.webp" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             A desktop habitat for parallel AI coding agents. Run Claude Code, Codex, and more agent CLIs side by side, each in its own Git worktree, with a review-first workflow.
                         </p>
@@ -78,16 +73,11 @@
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/nowaq.png"
-                            alt="NOWAQ screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
                         <p class="thing-date">Lead Engineer · Oct 2023 – Mar 2025</p>
-                        <h2>NOWAQ - AI-enabled Quality Assurance Solution</h2>
+                        <h2 class="peek" tabindex="0">NOWAQ - AI-enabled Quality Assurance Solution
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/nowaq.png" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             An AI-assisted API testing desktop app. It has an extensive report matrix and an intelligent API test system.
                         </p>
@@ -111,16 +101,11 @@
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/bruno.png"
-                            alt="Bruno screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
                         <p class="thing-date">Software Development Engineer II · 2025</p>
-                        <h2>Bruno</h2>
+                        <h2 class="peek" tabindex="0">Bruno
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/bruno.png" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)
                         </p>
@@ -145,16 +130,11 @@
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/kluff.png"
-                            alt="Kluff screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
                         <p class="thing-date">Full-Stack Developer · Feb – Jun 2026</p>
-                        <h2>Kluff</h2>
+                        <h2 class="peek" tabindex="0">Kluff
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/kluff.png" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             A collaborative workspace where employees and AI agents share context, build on each other's work, and contribute to a growing organizational memory.
                         </p>
@@ -176,16 +156,11 @@
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/slurp-ai.webp"
-                            alt="Slurp AI screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
                         <p class="thing-date">Full-Stack Developer · Feb – Jun 2026</p>
-                        <h2>Slurp AI</h2>
+                        <h2 class="peek" tabindex="0">Slurp AI
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/slurp-ai.webp" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             An AI agent that helps teams understand their project repositories by answering codebase questions directly in Slack or Microsoft Teams.
                         </p>
@@ -208,16 +183,11 @@
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/motherland-appointment.webp"
-                            alt="Motherland Appointment screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
                         <p class="thing-date">Freelance Developer · Co-developed</p>
-                        <h2>Doctor Appointment Platform</h2>
+                        <h2 class="peek" tabindex="0">Doctor Appointment Platform
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/motherland-appointment.webp" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             A platform for scheduling doctor appointments at Motherland Hospital.
                         </p>
@@ -274,10 +244,6 @@
             <p class="archive-link">
                 <a href="archive.html">View older projects in the archive</a>
             </p>
-            <dialog id="image-preview" aria-label="Image preview">
-                <button type="button" aria-label="Close image preview">Close</button>
-                <img src="" alt="" />
-            </dialog>
         </main>
         <footer>
             <div>
@@ -291,6 +257,5 @@
                 <li><a href="https://www.upwork.com/freelancers/~01f65a9370e897fcef?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork</a></li>
             </ul>
         </footer>
-        <script src="script.js"></script>
     </body>
 </html>
