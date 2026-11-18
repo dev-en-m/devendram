@@ -1,0 +1,21 @@
+/* Terminal card on the home page. Colours match the grass footer. */
+.terminal {
+    margin-top: 28px;
+    max-width: 560px;
+    border-radius: 10px;
+    background: #12170e;
+    color: #d9e4cc;
+    font: 14px/1.7 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    box-shadow: 0 6px 24px rgb(28 54 11 / 25%);
+    overflow: hidden;
+}
+.terminal-bar { display: flex; gap: 6px; padding: 10px 12px; background: #1c360b; }
+.terminal-bar span { width: 10px; height: 10px; border-radius: 50%; background: #9dbb3c; opacity: .55; }
+.terminal-body { padding: 12px 16px 16px; min-height: 9.5em; }
+.terminal-body > div { white-space: pre-wrap; }
+.terminal .cmd::before { content: "$ "; color: #9dbb3c; }
+.terminal .out { color: #b7c5a6; }
+.terminal a { color: #ffd43b; }
+.terminal .caret { display: inline-block; width: .6em; height: 1.1em; vertical-align: text-bottom; background: #9dbb3c; animation: caret 1s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .terminal .caret { animation: none; } }
