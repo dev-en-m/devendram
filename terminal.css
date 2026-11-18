@@ -20,14 +20,18 @@
 @keyframes caret { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .terminal .caret { animation: none; } }
 
+/* Narrow screens: no room beside the text, so the terminal is hidden. */
+.terminal { display: none; }
+
 /* Wide screens: the terminal sits in the empty space to the right of the text, so it takes no height. */
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
     body.home main { position: relative; }
     .terminal {
         position: absolute;
         top: 30px;
         left: calc(100% - var(--gutter) + 24px);
         width: min(340px, calc(var(--gutter) - 48px));
+        display: block;
         margin: 0;
         font-size: 13px;
     }
