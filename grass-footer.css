@@ -23,6 +23,18 @@
     will-change: transform;
   }
   #puff-cursor.on { opacity: 1; }
+  /* Smart cursor: one custom cursor per area. Over links the custom cursors hide and the native pointer shows. */
+  html:not([data-cursor="wind"]) #puff-cursor { opacity: 0; }
+  #swatter-cursor, #caret-cursor { position: fixed; left: 0; top: 0; pointer-events: none; z-index: 2147483647; opacity: 0; transition: opacity .15s; will-change: transform; }
+  #swatter-cursor { width: 44px; height: 56px; transform-origin: 22px 17px; }
+  html[data-cursor="swat"] #swatter-cursor.on { opacity: 1; }
+  #swatter-cursor .paddle { transform-origin: 22px 17px; }
+  #swatter-cursor.hit .paddle { animation: swat .2s ease-out; }
+  @keyframes swat { 40% { transform: rotate(-30deg) scale(.88); } }
+  #caret-cursor { width: 9px; height: 18px; background: #dcdfe4; animation: caret-blink 1.1s steps(1) infinite; }
+  html[data-cursor="caret"] #caret-cursor.on { opacity: 1; }
+  @keyframes caret-blink { 50% { background: transparent; } }
+  @media (prefers-reduced-motion: reduce) { #caret-cursor { animation: none; } #swatter-cursor.hit .paddle { animation: none; } }
   #puff-cursor .under { stroke: rgba(255,255,255,.9); stroke-width: 5; }
   #puff-cursor .flow  { stroke: #5b88ad; stroke-width: 2.4; stroke-dasharray: 12 5; animation: puff-flow .7s linear infinite; }
   @keyframes puff-flow { to { stroke-dashoffset: -17; } }
