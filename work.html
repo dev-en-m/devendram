@@ -41,18 +41,45 @@
         </header>
         <main>
             <section id="work-items" aria-labelledby="work-heading">
-                <h1 id="work-heading" class="page-head">Selected Work</h1>
+                <h1 id="work-heading" class="visually-hidden">Selected Work</h1>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/daintree.webp"
-                            alt="Daintree screenshot"
-                        />
+                    <div class="work-item-data">
+                        <p class="thing-date">Contract · Oct – Nov 2026</p>
+                        <h2>AI Operator, Confidential Client</h2>
+                        <p>
+                            I ran AI coding agents on a live operations platform for service businesses. I checked every change against the live app, git diffs and data. I fixed root causes instead of clearing tickets by hand.
+                        </p>
+                        <ul class="work-tags" aria-label="AI Operator, Confidential Client tags">
+                            <li>AI Coding Agents</li>
+                            <li>Root-Cause Fixes</li>
+                            <li>PostgreSQL</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
                     </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-item-data">
+                        <p class="thing-date">Contract · Aug – Sep 2026</p>
+                        <h2>Pre-Release QA, Confidential Client</h2>
+                        <p>
+                            I tested a Go and PostgreSQL backend product and its host agent on Ubuntu and Windows before launch. I delivered a structured test report on the blocking issues.
+                        </p>
+                        <ul class="work-tags" aria-label="Pre-Release QA, Confidential Client tags">
+                            <li>QA</li>
+                            <li>Go</li>
+                            <li>PostgreSQL</li>
+                            <li>Ubuntu</li>
+                            <li>Windows</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work-item">
                     <div class="work-item-data">
                         <p class="thing-date">QA &amp; Cross-Platform Engineer · Mar – Jun 2026</p>
-                        <h2>Daintree</h2>
+                        <h2 class="peek" tabindex="0">Daintree
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/daintree.webp" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             A desktop habitat for parallel AI coding agents. Run Claude Code, Codex, and more agent CLIs side by side, each in its own Git worktree, with a review-first workflow.
                         </p>
@@ -78,49 +105,64 @@
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/nowaq.png"
-                            alt="NOWAQ screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
-                        <p class="thing-date">Lead Engineer · Oct 2023 – Mar 2025</p>
-                        <h2>NOWAQ - AI-enabled Quality Assurance Solution</h2>
+                        <p class="thing-date">Full-Stack Developer · Feb – Jun 2026</p>
+                        <h2 class="peek" tabindex="0">Kluff
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/kluff.png" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
-                            An AI-assisted API testing desktop app. It has an extensive report matrix and an intelligent API test system.
+                            A collaborative workspace where employees and AI agents share context, build on each other's work, and contribute to a growing organizational memory.
                         </p>
                         <p>
-                            I co-developed it from April 2024. It is a fork of Bruno with test-case generation from OpenAPI specs using a local Llama 3 model, plus OWASP security tests and k6 performance tests.
+                            I added Cognee as the shared memory layer for the AI agents. I also built third-party tool integrations with Nango and Composio.
                         </p>
-                        <ul class="work-tags" aria-label="AI-enabled Quality Assurance Solution tags">
-                            <li>LLM Inference</li>
-                            <li>Quality Assurance</li>
-                            <li>Electron App</li>
-                            <li>OWASP</li>
-                            <li>Performance Testing</li>
-                            <li>Agentic Test Generation and Evaluation</li>
-                            <li>API Workflow &amp; E2E testing</li>
+                        <ul class="work-tags" aria-label="Kluff tags">
+                            <li>Organizational Memory</li>
+                            <li>AI Agents</li>
+                            <li>Agentic Collaboration</li>
+                            <li>AI Workflows</li>
+                            <li>Agentic Memory System</li>
                         </ul>
                         <p class="work-links">
-                            <a href="https://app.storylane.io/share/qzhsnafqdmor" target="_blank" rel="noopener noreferrer">
-                                Live demo
+                            <a href="https://kluff.com" target="_blank" rel="noopener noreferrer">
+                                Official website
                             </a>
                         </p>
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/bruno.png"
-                            alt="Bruno screenshot"
-                        />
+                    <div class="work-item-data">
+                        <p class="thing-date">Full-Stack Developer · Feb – Jun 2026</p>
+                        <h2 class="peek" tabindex="0">Slurp AI
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/slurp-ai.webp" alt="" loading="lazy" /></span>
+                        </h2>
+                        <p>
+                            An AI agent that helps teams understand their project repositories by answering codebase questions directly in Slack or Microsoft Teams.
+                        </p>
+                        <p>
+                            I owned the Microsoft Teams integration, built on the Microsoft Bot Framework.
+                        </p>
+                        <ul class="work-tags" aria-label="Slurp AI tags">
+                            <li>Slack Bot</li>
+                            <li>AI Agents</li>
+                            <li>Retrieval Augmented Generative AI</li>
+                            <li>Agentic Collaboration</li>
+                            <li>Microsoft Teams Bot</li>
+                            <li>Agentic Memory System</li>
+                        </ul>
+                        <p class="work-links">
+                            <a href="https://slurpai.com/engineering" target="_blank" rel="noopener noreferrer">
+                                Official website
+                            </a>
+                        </p>
                     </div>
+                </div>
+                <div class="work-item">
                     <div class="work-item-data">
                         <p class="thing-date">Software Development Engineer II · 2025</p>
-                        <h2>Bruno</h2>
+                        <h2 class="peek" tabindex="0">Bruno
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/bruno.png" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)
                         </p>
@@ -145,79 +187,39 @@
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/kluff.png"
-                            alt="Kluff screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
-                        <p class="thing-date">Full-Stack Developer · Feb – Jun 2026</p>
-                        <h2>Kluff</h2>
+                        <p class="thing-date">Lead Engineer · Oct 2023 – Mar 2025</p>
+                        <h2 class="peek" tabindex="0">NOWAQ - AI-enabled Quality Assurance Solution
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/nowaq.png" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
-                            A collaborative workspace where employees and AI agents share context, build on each other's work, and contribute to a growing organizational memory.
+                            An AI-assisted API testing desktop app. It has an extensive report matrix and an intelligent API test system.
                         </p>
                         <p>
-                            I added Cognee as the shared memory layer for the AI agents. I also built third-party tool integrations with Nango and Composio.
+                            I co-developed it from April 2024. It is a fork of Bruno with test-case generation from OpenAPI specs using a local Llama 3 model, plus OWASP security tests and k6 performance tests.
                         </p>
-                        <ul class="work-tags" aria-label="Kluff tags">
-                            <li>Organizational Memory</li>
-                            <li>AI Agents</li>
-                            <li>Agentic Collaboration</li>
-                            <li>AI Workflows</li>
-                            <li>Agentic Memory System</li>
+                        <ul class="work-tags" aria-label="AI-enabled Quality Assurance Solution tags">
+                            <li>LLM Inference</li>
+                            <li>Quality Assurance</li>
+                            <li>Electron App</li>
+                            <li>OWASP</li>
+                            <li>Performance Testing</li>
+                            <li>Agentic Test Generation and Evaluation</li>
+                            <li>API Workflow &amp; E2E testing</li>
                         </ul>
                         <p class="work-links">
-                            <a href="https://kluff.com" target="_blank" rel="noopener noreferrer">
-                                Official website
+                            <a href="https://app.storylane.io/share/qzhsnafqdmor" target="_blank" rel="noopener noreferrer">
+                                Live demo
                             </a>
                         </p>
                     </div>
                 </div>
                 <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/slurp-ai.webp"
-                            alt="Slurp AI screenshot"
-                        />
-                    </div>
-                    <div class="work-item-data">
-                        <p class="thing-date">Full-Stack Developer · Feb – Jun 2026</p>
-                        <h2>Slurp AI</h2>
-                        <p>
-                            An AI agent that helps teams understand their project repositories by answering codebase questions directly in Slack or Microsoft Teams.
-                        </p>
-                        <p>
-                            I owned the Microsoft Teams integration, built on the Microsoft Bot Framework.
-                        </p>
-                        <ul class="work-tags" aria-label="Slurp AI tags">
-                            <li>Slack Bot</li>
-                            <li>AI Agents</li>
-                            <li>Retrieval Augmented Generative AI</li>
-                            <li>Agentic Collaboration</li>
-                            <li>Microsoft Teams Bot</li>
-                            <li>Agentic Memory System</li>
-                        </ul>
-                        <p class="work-links">
-                            <a href="https://slurpai.com/engineering" target="_blank" rel="noopener noreferrer">
-                                Official website
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-image">
-                        <img
-                            class="work-preview"
-                            src="./images/motherland-appointment.webp"
-                            alt="Motherland Appointment screenshot"
-                        />
-                    </div>
                     <div class="work-item-data">
                         <p class="thing-date">Freelance Developer · Co-developed</p>
-                        <h2>Doctor Appointment Platform</h2>
+                        <h2 class="peek" tabindex="0">Doctor Appointment Platform
+                            <span class="peek-pop" aria-hidden="true"><img src="./images/motherland-appointment.webp" alt="" loading="lazy" /></span>
+                        </h2>
                         <p>
                             A platform for scheduling doctor appointments at Motherland Hospital.
                         </p>
@@ -238,46 +240,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="work-item thing-card">
-                    <div class="work-item-data">
-                        <p class="thing-date">Contract · Oct – Nov 2026</p>
-                        <h2>AI Operator, Confidential Client</h2>
-                        <p>
-                            I ran AI coding agents on a live operations platform for service businesses. I checked every change against the live app, git diffs and data. I fixed root causes instead of clearing tickets by hand.
-                        </p>
-                        <ul class="work-tags" aria-label="AI Operator, Confidential Client tags">
-                            <li>AI Coding Agents</li>
-                            <li>Root-Cause Fixes</li>
-                            <li>PostgreSQL</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="work-item thing-card">
-                    <div class="work-item-data">
-                        <p class="thing-date">Contract · Aug – Sep 2026</p>
-                        <h2>Pre-Release QA, Confidential Client</h2>
-                        <p>
-                            I tested a Go and PostgreSQL backend product and its host agent on Ubuntu and Windows before launch. I delivered a structured test report on the blocking issues.
-                        </p>
-                        <ul class="work-tags" aria-label="Pre-Release QA, Confidential Client tags">
-                            <li>QA</li>
-                            <li>Go</li>
-                            <li>PostgreSQL</li>
-                            <li>Ubuntu</li>
-                            <li>Windows</li>
-                        </ul>
-                    </div>
-                </div>
             </section>
             <p class="archive-link">
                 <a href="archive.html">View older projects in the archive</a>
             </p>
-            <dialog id="image-preview" aria-label="Image preview">
-                <button type="button" aria-label="Close image preview">Close</button>
-                <img src="" alt="" />
-            </dialog>
         </main>
         <footer>
             <div>
@@ -291,6 +257,5 @@
                 <li><a href="https://www.upwork.com/freelancers/~01f65a9370e897fcef?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork</a></li>
             </ul>
         </footer>
-        <script src="script.js"></script>
     </body>
 </html>
