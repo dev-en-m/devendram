@@ -217,6 +217,57 @@ main {
     cursor: zoom-in;
 }
 
+/* Work page: hover or focus on a product title opens a floating image preview. */
+.peek {
+    position: relative;
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+.peek:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.peek-pop {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 20;
+    width: min(440px, calc(100vw - 2 * var(--gutter)));
+    padding: 6px;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: var(--bg);
+    box-shadow: 0 14px 36px rgb(0 0 0 / 20%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    pointer-events: none;
+}
+
+.peek-pop img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.peek:hover .peek-pop,
+.peek:focus .peek-pop {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .peek-pop {
+        transition: none;
+        transform: none;
+    }
+}
+
 .work-tags {
     list-style: none;
     padding: 0;
