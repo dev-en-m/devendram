@@ -315,6 +315,7 @@ footer ul {
 @media (max-width: 600px) {
     header {
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: flex-start;
         padding-bottom: 16px;
     }
