@@ -10,6 +10,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setClearColor(0x000000, 0);
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 host.prepend(renderer.domElement);
+host.classList.add('grass-ok');   // grass drawn: hides the CSS fallback background
 
 // ---------- Fixed side-view camera ----------
 const VIEW_H = 3.2;          // footer height in world units
